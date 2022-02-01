@@ -1,7 +1,7 @@
 {
   "name": "rest-api-jwt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nodejs REST API with JWT & Roles (Autorization y Autenticatión) & Mongodb",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
@@ -9,7 +9,7 @@
     "start": "node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Camilo Murcia",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
