@@ -3,8 +3,8 @@ import * as productsController from '../controllers/products.controller';
 
 const router = Router();
 
-router.post('/', productsController.getProducts);
-router.get('/', productsController.createProduct);
+router.post('/', productsController.createProduct);
+router.get('/', productsController.getProducts);
 router.get('/:productId', productsController.getProductById);
 router.put('/:productId', productsController.updateProductById);
 router.delete('/:productId', productsController.deleteProductById);
