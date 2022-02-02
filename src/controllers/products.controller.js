@@ -8,8 +8,9 @@ export const createProduct = async(req, res) => {
     res.status(201).json(productSaved);
 }
 
-export const getProducts = (req, res) => {
-    res.json('getting products.')
+export const getProducts = async(req, res) => {
+    const products = await Product.find();
+    res.status(201).json(products);
 }
 export const getProductById = (req, res) => {}
 export const updateProductById = (req, res) => {}
