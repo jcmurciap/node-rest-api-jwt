@@ -3,7 +3,9 @@ import morgan from "morgan";
 import pkg from '../package.json';
 import productsRouter from './routes/products.routes';
 import authRouter from './routes/auth.routes';
+import userRouter from './routes/user.routes';
 import { createRoles } from "./libs/initialSetup";
+import User from "./models/User";
 
 
 const app = express();
@@ -23,6 +25,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/products', productsRouter);
 app.use('/api/auth', authRouter);
+app.use('/api/users', userRouter);
 
 
 
